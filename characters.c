@@ -66,7 +66,7 @@ unsigned int bytes_for(char* unicode, unsigned int n) {
     }
     return bytes_seen;
   }
-  return 0;
+  return 0; 
 }
 
 int main(int argc, char** argv) {
