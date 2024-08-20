@@ -86,6 +86,9 @@ int main(int argc, char** argv) {
     printf("%d(%x) ", letter, letter);
   }
   printf("\n");
+  printf("bytes_for(\"Ülo\", 3) should return 4: %d\n", bytes_for("Ülo", 3));
+  printf("bytes_for(\"成龙\", 2) should return 6: %d\n", bytes_for("成龙", 2));
+  printf("bytes_for(\"成龙\", 3) should return -1: %d\n", bytes_for("成龙", 3));
 
   return 0;
 }
